@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #3347f5;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #3347f5;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#company">Tradecoin</a>
+      <a href="#team">Team</a>
+      <a href="#vision">Our Vision</a>
+	        <a href="#careers">Careers</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Our Services <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#bring">Trading Bot</a>
+      <a href="#deliver">Tipping Bot</a>
+      <a href="#package">Nodes Setup</a>
+      <a href="#express">Gateway Services</a>
+	  <a href="#express">Whitepaper Development</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Smartholdem</a>
+	  <a href="#link1">AxAi</a>
+      <a href="#link2">Crude.NGN</a>
+      <a href="#link3">Qnodecoin</a>
+    </div>
+  </div>
+<div class="subnav">
+    <button class="subnavbtn">Active Mining Node <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Waves</a>
+      <a href="#link2">Turtle Network</a>
+      <a href="#link3">Pivx</a>
+	  <a href="#link3">Dash</a>
+    </div>
+  </div>  
+  
+<div class="subnav">
+    <button class="subnavbtn">Listed Exchanges <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Waves DEX</a>
+      <a href="#link2">Turtle Network DEX</a>
+      <a href="#link3">XBTS DEX</a>
+	  <a href="#link3">NANU Exchange</a>
+    </div>
+  </div>
+
+<div class="subnav">
+    <button class="subnavbtn">Price Trackers <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Coinpaprika</a>
+      <a href="#link2">Coinranking</a>
+	  <a href="#link1">Coinmarketcap</a>
+      <a href="#link3">Coingecko</a>
+	  <a href="#link3">Coincodex</a>
+	  <a href="#link3">Coinlore</a>
+    </div>
+  </div>  
+
+<div class="subnav">
+    <button class="subnavbtn">News<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Telegram</a>
+      <a href="#link2">E-mail Us</a>
+    </div>
+  </div>  
+  
+<div class="subnav">
+    <button class="subnavbtn">Contact US <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Telegram</a>
+      <a href="#link2">E-mail Us</a>
+    </div>
+  </div>  
+
+<div style="padding:0 16px">
+  <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
+  <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wavescapital</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body style="background-color:black;">
+<style>
+#mySidenav a {
+  position: absolute;
+  right: -105px;
+  transition: 0.8s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#about {
+  top: 150px;
+  text-align: center;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 210px;
+  text-align: center;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 270px;
+  text-align: center;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 330px;
+  text-align: center;
+  background-color: #555
+}
+</style>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+</div>
+
+<div style="position: absolute;left:50px;top:150px;width:50px;height:40px;border:5px solid #0000; background: #FF1493; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Sr</h2>
+</div>
+
+<div style="position: absolute;left:50px;top:205px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>1</h2>
+</div>
+
+<div style="position: absolute;left:50px;top:260px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>2</h2>
+</div>
+
+<div style="position: absolute;left:50px;top:315px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>3</h2>
+</div>
+
+<div style="position: absolute;left:50px;top:370px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>4</h2>
+</div>
+
+<div style="position: absolute;left:50px;top:425px;width:50px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>5</h2>
+</div>
+
+
+<div style="position: absolute;left:120px;top:150px;width:300px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>Project Name</h2>	
+</div>
+
+<div style="position: absolute;left:120px;top:205px;width:300px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">Tradecoin</h2>	
+</div>
+
+<div style="position: absolute;left:120px;top:260px;width:300px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">2</h2>	
+</div>
+
+<div style="position: absolute;left:120px;top:315px;width:300px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">3</h2>	
+</div>
+
+<div style="position: absolute;left:120px;top:370px;width:300px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">4</h2>	
+</div>
+
+<div style="position: absolute;left:120px;top:425px;width:300px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2><div onClick="window.open( 'https://tradecoin-token.github.io/','_top' ); return false;">5</h2>	
+</div>
+
+<div style="position: absolute;left:440px;top:150px;width:120px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Price</h2>	
+</div>
+
+<div style="position: absolute;left:440px;top:205px;width:120px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel10"></div>
+		<script>
+		assetid='EekwfLSAkbREneBHrXdZSRAEPvmijq71Nf2GDNqBStz4'
+    $.getJSON('https://marketdata.wavesplatform.com/api/candles/'+assetid+'/WAVES/1440/1', 
+	function(data10) {
+        var text10 = 
+		`
+		${data10[0].close}<br>
+		</b>`
+        $(".mypanel10").html(text10);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+<!-----price Column 2------->
+
+<div style="position: absolute;left:440px;top:260px;width:120px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel10"></div>
+		<script>
+		assetid='EekwfLSAkbREneBHrXdZSRAEPvmijq71Nf2GDNqBStz4'
+    $.getJSON('https://marketdata.wavesplatform.com/api/candles/'+assetid+'/WAVES/1440/1', 
+	function(data10) {
+        var text10 = 
+		`
+		${data10[0].close}<br>
+		</b>`
+        $(".mypanel10").html(text10);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+
+<!-----price Column 3------->
+
+<div style="position: absolute;left:440px;top:315px;width:120px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel10"></div>
+		<script>
+		assetid='EekwfLSAkbREneBHrXdZSRAEPvmijq71Nf2GDNqBStz4'
+    $.getJSON('https://marketdata.wavesplatform.com/api/candles/'+assetid+'/WAVES/1440/1', 
+	function(data10) {
+        var text10 = 
+		`
+		${data10[0].close}<br>
+		</b>`
+        $(".mypanel10").html(text10);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+<!-----price Column 4------->
+
+<div style="position: absolute;left:440px;top:370px;width:120px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel10"></div>
+		<script>
+		assetid='EekwfLSAkbREneBHrXdZSRAEPvmijq71Nf2GDNqBStz4'
+    $.getJSON('https://marketdata.wavesplatform.com/api/candles/'+assetid+'/WAVES/1440/1', 
+	function(data10) {
+        var text10 = 
+		`
+		${data10[0].close}<br>
+		</b>`
+        $(".mypanel10").html(text10);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+<!-----price Column 5------->
+
+<div style="position: absolute;left:440px;top:425px;width:120px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+	<div class="mypanel10"></div>
+		<script>
+		assetid='EekwfLSAkbREneBHrXdZSRAEPvmijq71Nf2GDNqBStz4'
+    $.getJSON('https://marketdata.wavesplatform.com/api/candles/'+assetid+'/WAVES/1440/1', 
+	function(data10) {
+        var text10 = 
+		`
+		${data10[0].close}<br>
+		</b>`
+        $(".mypanel10").html(text10);
+    });	
+	</script>
+	
+	</h2>	
+</div>
+
+
+<div style="position: absolute;left:580px;top:150px;width:120px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Change</h2>	
+</div>
+
+<div style="position: absolute;left:580px;top:205px;width:120px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+			<div class="mypanel11"></div>
+		<script>
+		assetid = 'EekwfLSAkbREneBHrXdZSRAEPvmijq71Nf2GDNqBStz4'
+    $.getJSON('https://marketdata.wavesplatform.com/api/candles/'+assetid+'/WAVES/1440/2', 
+	function(data10) {
+        var text10 = 
+		`
+		${
+		x = ((data10[0].close-data10[1].close)/data10[1].close*100).toFixed(2)
+		
+		}%<br>
+		</b>`
+        $(".mypanel11").html(x);
+    });	
+	</script>
+	
+	
+	
+	</h2>	
+</div>
+
+
+<div style="position: absolute;left:720px;top:150px;width:120px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Volume</h2>	
+</div>
+
+<div style="position: absolute;left:720px;top:205px;width:120px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	
+			<div class="mypanel12"></div>
+		<script>
+		assetid='EekwfLSAkbREneBHrXdZSRAEPvmijq71Nf2GDNqBStz4'
+    $.getJSON('https://marketdata.wavesplatform.com/api/candles/'+assetid+'/WAVES/1440/2', 
+	function(data11) {
+        var text11 = 
+		`
+		${
+		data11[0].volume/1000
+		} k<br>
+		</b>`
+        $(".mypanel12").html(text11);
+    });	
+	</script>
+	
+	
+	</h2>	
+</div>
+
+
+<div style="position: absolute;left:860px;top:150px;width:190px;height:40px;border:5px solid #0000; background: #0413db; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="white"><h2>Market Cap.
+	</h2>	
+</div>
+
+
+<div style="position: absolute;left:860px;top:205px;width:190px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel13"></div>
+	    <script>
+		
+		      var settings = {
+           "async": true,
+           "crossDomain": false,
+           "url": "https://marketdata.wavesplatform.com/api/candles/WAVES/"+'34N9YcEETLWn93qYQ64EsP1x89tSruJU44RrEMSXXEPJ'+"/1440/1",
+           "method": "GET"
+         }
+		
+		$.ajax(settings).done(function (response) {
+           console.log(response);
+		   var content = parseFloat(response[0].close).toFixed(2);
+           $("#supply").append(content*1000+" M $")
+		   
+         });
+    </script>
+      <div id="supply"></div>
+
+</div>	
+
+	</h2>	
+</div>
+
+<div style="position: absolute;left:1070px;top:150px;width:180px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>Fund Raised</h2>	
+</div>
+
+<div style="position: absolute;left:1070px;top:205px;width:180px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel14"></div>
+		<script>
+		var address = '3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs'
+    $.getJSON('https://nodes.wavesnodes.com/addresses/balance/'+address, 
+	function(data14) {
+        var text14 = 
+		`
+		${(data14.balance/100000000).toFixed(2)+" WAVES"}<br>
+		</b>`
+        $(".mypanel14").html(text14);
+    });	
+	</script>
+
+	</h2>	
+</div>
+
+
+<div style="position: absolute;left:1270px;top:150px;width:125px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>Status</h2>	
+</div>	
+	
+<div style="position: absolute;left:1270px;top:205px;width:125px;height:40px;border:5px solid #0000; background: #FFFF; border-radius: 5px; text-align: center; font-size:12px;font-family:courier,arial,helvetica;">
+    <font color="black"><h2>
+	<div class="mypanel15"></div>
+		<script>
+		var address = '3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs'
+    $.getJSON('https://nodes.wavesnodes.com/addresses/balance/'+address, 
+	function(data15) {
+        var text15 = 
+		`
+		${((data15.balance/100000000)/1000).toFixed(3)+" %"}<br>
+		</b>`
+        $(".mypanel15").html(text15);
+    });	
+	</script>
+
+	</h2>	
+</div>	
+
+<img src="C:\Users\Lenovo\Desktop\tradecoin.svg" style="position:fixed; left:125px; top:210px; width:40px; height:40px; border:none;">
+<img src="token.png" style="position:fixed; left:125px; top:155px; width:40px; height:40px; border:none;border-radius: 20px;">
+<img src="price.png" style="position:fixed; left:440px; top:155px; width:40px; height:40px; border:none;border-radius: 20px;">
+<img src="stockup.jpg" style="position:fixed; left:585px; top:165px; width:25px; height:25px; border:none;border-radius: 20px;">
+<img src="stockdown.jpg" style="position:fixed; left:680px; top:165px; width:25px; height:25px; border:none;border-radius: 20px;">
+<img src="volume.png" style="position:fixed; left:725px; top:165px; width:25px; height:25px; border:none;border-radius: 20px;">
+<img src="marketcap.jpg" style="position:fixed; left:865px; top:160px; width:30px; height:30px; border:none;border-radius: 20px;">
+<img src="fundraise.png" style="position:fixed; left:1075px; top:160px; width:30px; height:30px; border:none;border-radius: 20px;">
+<img src="status.png" style="position:fixed; left:1275px; top:160px; width:30px; height:30px; border:none;border-radius: 20px;">
+
+	
+
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;height:500px;}
+
+.icon-bar {
+  position: fixed;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.8s ease;
+  color: white;
+  font-size: 15px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
